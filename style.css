@@ -1,4 +1,52 @@
 body{
-    font-family: Arial;
+    font-family: Comic Sans MS;
+    background: linear-gradient(to bottom, #9933ff 0%, #6699ff 100%);
+}
+
+.card{
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	transition: 0.3s;
+  	border-radius: 10px;
+  	padding: 25px;
+  	max-width: 500px;
+  	margin-right: auto;
+  	margin-left: auto;
+
+}
+
+.input{
+	font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border-color: #d0d3d9;
+  border-radius: 4px;
+}
+
+.button{
+	font-size: 14px;
+  	width: 25%;
+  	border: none;
+	padding: 12px;
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-primary{
+	background-color: #396dd4;
+	color:white;
+
+}
+
+.button-secondary{
+	background-color: #d5d7db;
+	color:black;
+}
+
+.center{
+	margin-right: auto;
+	margin-left: auto;
 }
 

@@ -4,63 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="card">
+        
     <h1>Tour Reservation Form</h1>
     <p>Please lets know you are interested to use</p>
     <hr>
-    <form action="">
+    <form name="reservation" action="index.html" onsubmit="return validateForm()" method="POST" >
 
         <h3>Full Name</h3>
-        <input type="text" name="txtfirtsname_ahmadfauzan" size="10">
+        <input class="input" type="text" name="txtfirtsname_ahmadfauzan" size="10">
         <br>
         <small>Firts Name</small>
         <br>
-        <input type="text" name="txtlastname_ahmadfauzan" size="12">
+        <input class="input" type="text" name="txtlastname_ahmadfauzan" size="12">
         <br>
         <small>Last Name</small>
         <br>
         <br>
 
         <h3>E-mail</h3>
-        <input type="email" name="txtemail_ahmadfauzan" placeholder="ex: myname@example.com" size="25">
+        <input class="input" type="email" name="txtemail_ahmadfauzan" placeholder="ex: myname@example.com" size="25">
         <br>
         <br>
         <h3>Phone Number</h3>
-        <input type="text" name="txtphonenumber1_ahmadfauzan" size="5"> -
-        <input type="text" name="txtphonenumber2_ahmadfauzan" size="10">
+        <input class="input" type="text" name="txtphonenumber1_ahmadfauzan" size="5"> -
+        <input class="input" type="text" name="txtphonenumber2_ahmadfauzan" size="10">
         <h3>When are you planning to visit</h3>
-        <input type="text" name="txtmonth_ahmadfauzan" size="5" placeholder="04"> -
-        <input type="text" name="txtday_ahmadfauzan" size="5" placeholder="23"> -
-        <input type="text" name="txtyear_ahmadfauzan" size="5" placeholder="2020">
+        <input class="input" type="text" name="txtmonth_ahmadfauzan" size="5" placeholder="04"> -
+        <input class="input" type="text" name="txtday_ahmadfauzan" size="5" placeholder="23"> -
+        <input class="input" type="text" name="txtyear_ahmadfauzan" size="5" placeholder="2020">
         <br>
         <br>
         <h3>How many people are in your group?</h3>
-        <input type="text" name="txtmanypeople_ahmadfauzan" size="3" placeholder="1">
+        <input class="input" type="text" name="txtmanypeople_ahmadfauzan" size="3" placeholder="1">
         <br>
         <br>
         <h3>Which tours or events are you most interested in?</h3>
-        <input type="checkbox" name="chkrevolution_ahmadfauzan"> <label>Revolution was just the beginning</label><br>
-        <input type="checkbox" name="chkTranscendentalism_ahmadfauzan"> <label>Transcendentalism</label><br>
-        <input type="checkbox" name="chkcustom_ahmadfauzan"> <label>Custom</label><br>
+        <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <label>Revolution was just the beginning</label><br>
+        <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <label>Transcendentalism</label><br>
+        <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <label>Custom</label><br>
         <small><b>if phone, when is the</b></small>
-        <input type="radio" name="rad811_ahmadfauzan"> <label>8-11 am</label><br>
+        <input class="input" type="radio" name="optionTime_ahmadfauzan"> <label>8-11 am</label><br>
         <small><b>best time of day for &nbsp;</b></small>
-        <input type="radio" name="rad124_ahmadfauzan"> <label>12-4 pm</label><br>
+        <input class="input" type="radio" name="optionTime_ahmadfauzan"> <label>12-4 pm</label><br>
         <small><b>a call back ? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b></small>
-        <input type="radio" name="rad610_ahmadfauzan"> <label>6-10 pm</label><br>
+        <input class="input" type="radio" name="optionTime_ahmadfauzan"> <label>6-10 pm</label><br>
         <br>
 
         <h3>Anything else we should know ?</h3>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="txtsuggest_ahmadfauzan" id="" cols="30" rows="10"></textarea>
         <br>
-        <input type="submit" name="btnsave_ahmadfauzan" value="Submit">
-        <input type="submit" name="btnreset_ahmadfauzan" value="Reset">
-
+        <div class="center">
+        <input class="button button-primary" type="submit" name="btnsave_ahmadfauzan" value="Submit">
+        <input class="button button-secondary" type="reset" name="btnreset_ahmadfauzan" value="Reset">
+        </div>
 
     </form>
-</body>
+    </div>
 
+</body>
+<script src="validation.js"></script>
 </html>
