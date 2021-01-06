@@ -10,63 +10,72 @@
 
 <body>
     <div class="card">
-        
-    <h1>Tour Reservation Form</h1>
-    <p>Please lets know you are interested to use</p>
-    <hr>
-    <form name="reservation" action="index.html" onsubmit="return validateForm()" method="POST" >
 
-        <h3>Full Name</h3>
-        <input class="input" type="text" name="txtfirtsname_ahmadfauzan" size="10">
-        <br>
-        <small>Firts Name</small>
-        <br>
-        <input class="input" type="text" name="txtlastname_ahmadfauzan" size="12">
-        <br>
-        <small>Last Name</small>
-        <br>
-        <br>
+        <h1>Tour Reservation Form</h1>
+        <p>Please lets know you are interested to use</p>
+        <hr>
+        <form name="reservation" action="index.html" onsubmit="return validateForm()" method="POST">
+            <br>
+            <label>Full Name</label>
+            <div class="row">
+                <input class="input mr-10" type="text" name="txtlastname_ahmadfauzan" placeholder="Firts Name">
+                <input class="input" type="text" name="txtfirtsname_ahmadfauzan" placeholder="Last Name">
+            </div>
+            <label>E-mail</label>
+            <div class="col">
+                <input class="input" type="email" name="txtemail_ahmadfauzan" placeholder="ex: myname@example.com">
+            </div>
+            <label>Phone Number</label>
+            <br>
+            <input class="input" type="text" name="txtphonenumber1_ahmadfauzan" size="5"> -
+            <input class="input" type="text" name="txtphonenumber2_ahmadfauzan" size="10">
+            <br>
+            <label>When are you planning to visit</label>
+            <br>
+            <input class="input" type="text" name="txtmonth_ahmadfauzan" size="5" placeholder="04"> -
+            <input class="input" type="text" name="txtday_ahmadfauzan" size="5" placeholder="23"> -
+            <input class="input" type="text" name="txtyear_ahmadfauzan" size="5" placeholder="2020">
+            <br>
+            <label>How many people are in your group?</label>
+            <br>
+            <input class="input" type="text" name="txtmanypeople_ahmadfauzan" size="3" placeholder="1">
 
-        <h3>E-mail</h3>
-        <input class="input" type="email" name="txtemail_ahmadfauzan" placeholder="ex: myname@example.com" size="25">
-        <br>
-        <br>
-        <h3>Phone Number</h3>
-        <input class="input" type="text" name="txtphonenumber1_ahmadfauzan" size="5"> -
-        <input class="input" type="text" name="txtphonenumber2_ahmadfauzan" size="10">
-        <h3>When are you planning to visit</h3>
-        <input class="input" type="text" name="txtmonth_ahmadfauzan" size="5" placeholder="04"> -
-        <input class="input" type="text" name="txtday_ahmadfauzan" size="5" placeholder="23"> -
-        <input class="input" type="text" name="txtyear_ahmadfauzan" size="5" placeholder="2020">
-        <br>
-        <br>
-        <h3>How many people are in your group?</h3>
-        <input class="input" type="text" name="txtmanypeople_ahmadfauzan" size="3" placeholder="1">
-        <br>
-        <br>
-        <h3>Which tours or events are you most interested in?</h3>
-        <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <label>Revolution was just the beginning</label><br>
-        <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <label>Transcendentalism</label><br>
-        <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <label>Custom</label><br>
-        <small><b>if phone, when is the</b></small>
-        <input class="input" type="radio" name="optionTime_ahmadfauzan"> <label>8-11 am</label><br>
-        <small><b>best time of day for &nbsp;</b></small>
-        <input class="input" type="radio" name="optionTime_ahmadfauzan"> <label>12-4 pm</label><br>
-        <small><b>a call back ? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b></small>
-        <input class="input" type="radio" name="optionTime_ahmadfauzan"> <label>6-10 pm</label><br>
-        <br>
+            <br>
+            <label>Which tours or events are you most interested in?</label>
+            <br>
+            <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <small>Revolution was just the
+                beginning</small><br>
+            <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <small>Transcendentalism</small><br>
+            <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <small>Custom</small><br><br>
 
-        <h3>Anything else we should know ?</h3>
-        <textarea name="txtsuggest_ahmadfauzan" id="" cols="30" rows="10"></textarea>
-        <br>
-        <div class="center">
-        <input class="button button-primary" type="submit" name="btnsave_ahmadfauzan" value="Submit">
-        <input class="button button-secondary" type="reset" name="btnreset_ahmadfauzan" value="Reset">
-        </div>
 
-    </form>
+            <div class="row">
+                <small><b>if phone, when is the</b></small>
+                <input class="input" type="radio" name="optionTime_ahmadfauzan"> 8-11 am
+            </div>
+            <div class="row">
+                <small><b>best time of day for</b></small>
+                <input class="input" type="radio" name="optionTime_ahmadfauzan">12-4 pm
+            </div>
+            <div class="row">
+                <small><b>a call back ?</b></small>
+                <input class="input right" type="radio" name="optionTime_ahmadfauzan">6-10 pm
+            </div>
+            <br>
+            <!-- </div> -->
+
+            <label>Anything else we should know ?</label>
+            <textarea class="textarea" name="txtsuggest_ahmadfauzan" id="" cols="30" rows="10"></textarea>
+            <br>
+            <div class="center">
+                <input class="button button-primary" type="submit" name="btnsave_ahmadfauzan" value="Submit">
+                <input class="button button-secondary" type="reset" name="btnreset_ahmadfauzan" value="Reset">
+            </div>
+
+        </form>
     </div>
 
 </body>
 <script src="validation.js"></script>
+
 </html>
