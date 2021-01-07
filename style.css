@@ -1,6 +1,8 @@
 body{
     font-family: Comic Sans MS;
-    background: linear-gradient(to bottom, #9933ff 0%, #6699ff 100%);
+	background: rgb(59,69,119);
+	background: radial-gradient(circle, rgba(59,69,119,1) 0%, rgba(85,94,158,1) 100%);
+	color:white;
 }
 
 label{
@@ -8,12 +10,22 @@ label{
 	margin-bottom: 10px;
 }
 
+table{
+	width: 100%;
+}
+
+
 .card{
-	background: rgb(255,255,255);
+	/* background: rgb(255,255,255); */
+	background-image: url('https://cdn.dribbble.com/users/278548/screenshots/5516239/japandribbblee.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   	transition: 0.3s;
   	border-radius: 10px;
-  	padding: 25px;
+	padding: 25px;
+	width: fit-content;
   	max-width: 500px;
   	margin: auto;
 
@@ -21,24 +33,32 @@ label{
 
 .input{
 	font-size: 16px;
-  font-size: max(16px, 1em);
-  font-family: inherit;
-  padding: 0.25em 0.5em;
-  background-color: #fff;
-  border-color: #d0d3d9;
-  border-radius: 4px;
-  margin-bottom: 10px;
+	font-size: max(16px, 1em);
+	font-family: inherit;
+	padding: 0.25em 0.5em;
+	background-color: #fff;
+	border-color: #d0d3d9;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.input-invalid{
+	border-color:red;
+	outline-color: red;
 }
 
 .textarea{
+	font-size: 16px;
+	font-size: max(16px, 1em);
+	font-family: inherit;
 	width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
 }
 
 
@@ -53,7 +73,8 @@ label{
 }
 
 .button-primary{
-	background-color: #396dd4;
+	background: rgb(59,69,119);
+	background: radial-gradient(circle, rgba(59,69,119,1) 0%, rgba(85,94,158,1) 100%);
 	color:white;
 
 }
@@ -78,10 +99,15 @@ label{
 	flex-direction: column;
 	flex: 100%;
   }
+
   
   /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 800px) {
+  @media (max-width: 806px) {
 	.row {
 	  flex-direction: column;
 	}
+	.mr-10{
+		margin-right: 0px;
+	}
   }
+

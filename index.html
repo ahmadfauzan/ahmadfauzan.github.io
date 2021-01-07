@@ -12,13 +12,14 @@
     <div class="card">
 
         <h1>Tour Reservation Form</h1>
-        <p>Please lets know you are interested to use</p>
+        <p> Please lets know you are interested to use</p>
         <hr>
         <form name="reservation" action="index.html" onsubmit="return validateForm()" method="POST">
             <br>
             <label>Full Name</label>
             <div class="row">
-                <input class="input mr-10" type="text" name="txtfirtsname_ahmadfauzan" placeholder="Firts Name">
+                <input class="input mr-10" type="text" name="txtfirtsname_ahmadfauzan" id="fname"
+                    placeholder="Firts Name">
                 <input class="input" type="text" name="txtlastname_ahmadfauzan" placeholder="Last Name">
             </div>
             <label>E-mail</label>
@@ -27,14 +28,16 @@
             </div>
             <label>Phone Number</label>
             <br>
-            <input class="input" type="text" name="txtphonenumber1_ahmadfauzan" size="5"> -
-            <input class="input" type="text" name="txtphonenumber2_ahmadfauzan" size="10">
+            <select class="input" name="slctphonenumber_ahmadfauzan" id="cars">
+                <option value="+62" selected>ID +62</option>
+                <option value="+44">UK +44</option>
+                <option value="+1">US +1</option>
+            </select> -
+            <input class="input" type="text" name="txtphonenumber_ahmadfauzan">
             <br>
             <label>When are you planning to visit</label>
             <br>
-            <input class="input" type="text" name="txtmonth_ahmadfauzan" size="5" placeholder="04"> -
-            <input class="input" type="text" name="txtday_ahmadfauzan" size="5" placeholder="23"> -
-            <input class="input" type="text" name="txtyear_ahmadfauzan" size="5" placeholder="2020">
+            <input class="input" type="date" name="txtdate_ahmadfauzan">
             <br>
             <label>How many people are in your group?</label>
             <br>
@@ -48,32 +51,44 @@
             <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <small>Transcendentalism</small><br>
             <input class="input" type="checkbox" name="chkEvent_ahmadfauzan"> <small>Custom</small><br><br>
 
-
-            <div class="row">
-                <small><b>if phone, when is the</b></small>
-                <input class="input" type="radio" name="optionTime_ahmadfauzan"> 8-11 am
-            </div>
-            <div class="row">
-                <small><b>best time of day for</b></small>
-                <input class="input" type="radio" name="optionTime_ahmadfauzan">12-4 pm
-            </div>
-            <div class="row">
-                <small><b>a call back ?</b></small>
-                <input class="input right" type="radio" name="optionTime_ahmadfauzan">6-10 pm
-            </div>
+            <table>
+                <td>
+                    <small><b>if phone, when is the</b></small>
+                </td>
+                <td>
+                    <input class="input" type="radio" name="optionTime_ahmadfauzan"> 8-11 am
+                </td>
+                <tr>
+                    <td>
+                        <small><b>best time of day for</b></small>
+                    </td>
+                    <td>
+                        <input class="input" type="radio" name="optionTime_ahmadfauzan">12-4 pm
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <small><b>a call back ?</b></small>
+                    </td>
+                    <td>
+                        <input class="input" type="radio" name="optionTime_ahmadfauzan">6-10 pm
+                    </td>
+                </tr>
+            </table>
             <br>
             <!-- </div> -->
 
             <label>Anything else we should know ?</label>
             <textarea class="textarea" name="txtsuggest_ahmadfauzan" id="" cols="30" rows="10"></textarea>
             <br>
-            <div class="center">
-                <input class="button button-primary" type="submit" name="btnsave_ahmadfauzan" value="Submit">
+            <p align="center">
+                <input class="button button-primary mr-10" type="submit" name="btnsave_ahmadfauzan" value="Submit">
                 <input class="button button-secondary" type="reset" name="btnreset_ahmadfauzan" value="Reset">
-            </div>
+            </p>
 
         </form>
     </div>
+
 
 </body>
 <script src="validation.js"></script>
