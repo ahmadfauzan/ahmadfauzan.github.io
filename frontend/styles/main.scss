@@ -159,6 +159,17 @@ input {
   }
 }
 
+.nav-checkout {
+  margin-top: 1em !important;
+  .label-nav-checkout {
+    li {
+      h2 {
+        color: #98c1d9;
+      }
+    }
+  }
+}
+
 // Header
 header {
   // position: absolute;
@@ -817,5 +828,50 @@ header {
       border: 0;
       font-weight: bold;
     }
+
+    .qty-checkout {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+// Shipping Address
+.shipping-address {
+  width: 280px;
+  height: 235px;
+  background-color: transparent;
+  border: 2px solid #e0fbfc;
+  border-radius: 20px;
+  padding: 25px;
+
+  .address {
+    margin-top: 15px;
+    .btn-primary {
+      background-color: #98c1d9;
+      color: #3d5a80;
+      border: 3px solid #98c1d9;
+      width: 227px;
+      height: 30px;
+
+      &:hover {
+        background-color: #98c1d9 !important;
+        color: #fff;
+        border: 3px solid #ffffff;
+      }
+    }
+  }
+}
+
+// Payment Intructions
+.payment-intructions {
+  width: 352px;
+  margin-top: 2em;
+  h5 {
+    color: #e0fbfc !important;
+    margin-bottom: 15px;
+  }
+
+  .bank-detail {
+    margin-top: 15px;
   }
 }
