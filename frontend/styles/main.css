@@ -77,6 +77,24 @@ input {
   position: relative !important;
 }
 
+.qty .qty-btn {
+  background-color: transparent;
+  color: #98c1d9;
+  border-radius: 50px;
+  border: 0;
+}
+
+.qty .qty-btn:hover {
+  background-color: #3d5a80;
+  color: #e0fbfc;
+}
+
+.qty .quantity {
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+}
+
 .navbar .navbar-toggler {
   color: #98c1d9;
 }
@@ -266,24 +284,6 @@ header .btn-size:hover {
 
 header .qty-price {
   display: inline;
-}
-
-header .qty .qty-btn {
-  background-color: transparent;
-  color: #98c1d9;
-  border-radius: 50px;
-  border: 0;
-}
-
-header .qty .qty-btn:hover {
-  background-color: #3d5a80;
-  color: #e0fbfc;
-}
-
-header .qty .quantity {
-  background-color: transparent;
-  border: 0;
-  text-align: center;
 }
 
 header .price {
@@ -663,6 +663,7 @@ header .btn-buy-now {
   width: 631px;
   height: 45px;
   margin-top: 20px;
+  margin-bottom: 10px;
   position: relative;
   padding: 10px;
   border-radius: 20px;
@@ -689,5 +690,102 @@ header .btn-buy-now {
 
 .content-cart .select-all .form-check {
   margin-top: -2px;
+}
+
+.content-cart .order-summary {
+  width: 352px;
+  height: 236px;
+  background-color: transparent;
+  border: 2px solid #e0fbfc;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.content-cart .order-summary h5 {
+  color: #e0fbfc !important;
+  margin-bottom: 15px;
+}
+
+.content-cart .order-summary hr {
+  color: #fff;
+}
+
+.content-cart .order-summary .label-total-price {
+  font-weight: 600;
+}
+
+.content-cart .order-summary .total-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e0fbfc;
+  margin-bottom: 25px;
+}
+
+.content-cart .order-summary .btn-primary {
+  height: 32px;
+  width: 301px;
+}
+
+.content-cart .list-cart {
+  width: 631px;
+}
+
+.content-cart .list-cart .row {
+  margin-top: 1em;
+}
+
+.content-cart .list-cart .card-cart {
+  position: relative;
+  width: 103px;
+  height: 86px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.41)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  /* Note: currently only Safari supports backdrop-filter */
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  --webkit-backdrop-filter: blur(15px);
+  /* (plus shape's fill blended on top as a separate layer with 84% opacity) */
+}
+
+.content-cart .list-cart .card-cart .img-card {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 90px;
+  margin-left: 5px;
+}
+
+.content-cart .list-cart .form-check-input {
+  position: relative;
+}
+
+.content-cart .list-cart .qty {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-left: -5px;
+}
+
+.content-cart .list-cart .qty .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.content-cart .list-cart .name {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-cart .list-cart .price {
+  font-weight: 600;
+  color: #e0fbfc;
+}
+
+.content-cart .list-cart .btn-remove {
+  background-color: transparent;
+  color: #98c1d9;
+  border: 0;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
