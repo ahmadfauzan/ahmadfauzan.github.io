@@ -64,7 +64,7 @@
                             New York, 124331
                         </p>
                         <div class="d-grid">
-                            <button class="btn-primary">Checkout</button>
+                            <button class="btn-primary" data-bs-target="#shippingAddress" data-bs-toggle="modal">choose another address</button>
                         </div>
                     </div>
                 </section>
@@ -165,7 +165,7 @@
                     </div>
                   </div>
                   <div class="d-grid">
-                    <button class="btn-primary">Checkout</button>
+                    <button class="btn-primary" data-bs-target="#payment" data-bs-toggle="modal">I have made payment</button>
                   </div>
                 </section>
 
@@ -194,6 +194,109 @@
             </div>
        </section>
     </main>
+
+    <!-- Modal for payment -->
+    <div class="modal fade" id="payment" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content dark">
+          <div class="modal-header">
+            <h2 class="modal-title small" id="exampleModalToggleLabel">Payment</h2>
+          </div>
+          <div class="modal-body">
+            <label for="account_name" class="mb-2">
+              Account Name
+            </label>
+            <input type="text" class="form-control input-modal mb-3">
+            <label for="provider" class="mb-2">
+              Provider
+            </label>
+            <input type="text" class="form-control input-modal mb-3">
+            <label for="amount" class="mb-2">
+              Amount
+            </label>
+            <input type="text" class="form-control input-modal mb-3" value="$1999" readonly>
+            <label for="proof_of_payment" class="form-label mt-1">Proof of payment</label>
+            <input class="form-control input-modal mb-5" type="file" id="formFile">
+            <input type="submit" class="btn-primary btn-login mb-3" value="Submit">
+          </div>
+ 
+        </div>
+      </div>
+    </div>
+
+            <!-- Modal for Shipping Address -->
+            <div class="modal fade" id="shippingAddress" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content dark">
+                  <div class="modal-header">
+                    <h4 class="modal-title small" id="exampleModalToggleLabel">Choose Shipping Address</h4>
+                  </div>
+                  <div class="modal-body">
+                    <button class="btn-secondary new-address" data-bs-target="#newAddress" data-bs-toggle="modal">Add New Address</button>
+                    <br>
+                    <div class="my-address">
+                      <div class="shipping-address">
+                        <div class="address">
+                            <p>
+                                <b>
+                                    Joe Doe
+                                </b> 
+                                &nbsp; (Office)
+                                <br>
+                                083252528
+                                <br>
+                                Green Office Lt 9, Time Square
+                                <br>
+                                New York, 124331
+                            </p>
+                            <a href="#">Edit</a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer text-center mb-3">
+                      <button class="btn-primary address">Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="newAddress" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content dark">
+                  <div class="modal-header">
+                    <h2 class="modal-title small" id="exampleModalToggleLabel">Shipping Address</h2>
+                  </div>
+                  <div class="modal-body">
+                    <label for="label" class="mb-2">
+                      Label
+                    </label>
+                    <input type="text" class="form-control input-modal mb-3">
+                    <label for="phone_number" class="mb-2">
+                      Phone Number
+                    </label>
+                    <input type="text" class="form-control input-modal mb-3">
+                    <label for="province" class="mb-2">
+                      Province
+                    </label>
+                    <input type="text" class="form-control input-modal mb-3">
+                    <label for="city" class="mb-2">
+                      City
+                    </label>
+                    <input type="text" class="form-control input-modal mb-3">
+                    <label for="address" class="mb-2">
+                      Address
+                    </label>
+                    <textarea class="form-control input-modal mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="postal_code" class="mb-2">
+                      Postal Code
+                    </label>
+                    <input type="number" class="form-control input-modal mb-5">
+                    <input type="submit" class="btn-primary btn-login mb-3" value="Add this address">
+                  </div>
+         
+                </div>
+              </div>
+            </div>
 
         <!-- Modal for login and register -->
         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
