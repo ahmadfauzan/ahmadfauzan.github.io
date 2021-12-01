@@ -259,7 +259,7 @@
                     </div>
                   </div>
                   <div class="d-grid">
-                    <button class="btn-primary">Checkout</button>
+                    <button class="btn-primary" data-bs-target="#shippingAddress" data-bs-toggle="modal">Checkout</button>
                   </div>
                 </section>
               </div>
@@ -270,6 +270,76 @@
             </div>
        </section>
     </main>
+
+        <!-- Modal for Shipping Address -->
+        <div class="modal fade" id="shippingAddress" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dark">
+              <div class="modal-header">
+                <h4 class="modal-title small" id="exampleModalToggleLabel">Choose Shipping Address</h4>
+              </div>
+              <div class="modal-body">
+                <button class="btn-secondary new-address" data-bs-target="#newAddress" data-bs-toggle="modal">Add New Address</button>
+                <br>
+                <div class="my-address">
+                  <div class="shipping-address">
+                    <div class="address">
+                        <p>
+                            <b>
+                                Joe Doe
+                            </b> 
+                            &nbsp; (Office)
+                            <br>
+                            083252528
+                            <br>
+                            Green Office Lt 9, Time Square
+                            <br>
+                            New York, 124331
+                        </p>
+                        <a href="#">Edit</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer text-center mb-3">
+                  <button class="btn-primary address">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="newAddress" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dark">
+              <div class="modal-header">
+                <h2 class="modal-title my-auto" id="exampleModalToggleLabel">Register</h2>
+              </div>
+              <div class="modal-body">
+                <label for="full_name" class="mb-2">
+                  Full Name
+                </label>
+                <input type="text" class="form-control input-modal mb-3">
+                <label for="email" class="mb-2">
+                  Email
+                </label>
+                <input type="email" class="form-control input-modal mb-3">
+                <label for="password" class="mb-2">
+                  Password
+                </label>
+                <input type="password" class="form-control input-modal mb-3">
+                <label for="confirm_password" class="mb-2">
+                  Confirm Password
+                </label>
+                <input type="password" class="form-control input-modal mb-5">
+                <input type="submit" class="btn-primary btn-login" value="Register">
+              </div>
+              <div class="modal-footer text-center mb-3">
+                Already registered?
+                  <a href="#"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal">login now</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Modal for login and register -->
         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
